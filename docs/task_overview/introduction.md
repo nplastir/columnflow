@@ -30,7 +30,7 @@ A default value for this argument can be set in the analysis config.
 Similarly, the ```--shift``` argument can be given, in order to choose which corrections are to be used, e.g. which variation (up, down, nominal) of the jet-energy corrections are to be used.
 
 - {py:class}`~columnflow.tasks.selection.SelectEvents`:
-Task to implement selections to be applied on the datssets.
+Task to implement selections to be applied on the datasets.
 This task uses objects of the {py:class}`~columnflow.selection.Selector` class to apply the selection.
 The output are masks for the events and objects to be selected, saved in a parquet file, and some additional parameters stored in a dictionary format, like the statistics of the selection (which are needed for the plotting tasks further down the task tree), saved in a json file.
 The mask are not applied to the columns during this task.
